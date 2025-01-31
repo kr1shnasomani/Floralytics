@@ -1,13 +1,17 @@
 <h1 align="center">Floralytics</h1>
-
+This CNN-based flower classification model processes the Flowers Recognition dataset, utilizing image augmentation and deep learning to classify Daisy, Dandelion, Rose, Sunflower, and Tulip. The model achieves 97% accuracy with optimized convolutional layers ensuring robust feature extraction and high-performance classification.
 
 ## Execution Guide:
 1. Run the following command line in the terminal:
    ```
-
+   pip install tensorflow keras numpy pandas matplotlib seaborn scikit-learn opencv-python pillow
    ```
 
-2.
+2. Download the dataset (link to the dataset: https://www.kaggle.com/datasets/alxmamaev/flowers-recognition)
+
+3. Copy and paste the path of the images into the code
+
+4. Upon running the code the model outputs its prediction
 
 ## Model Prediction:
 
