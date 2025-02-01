@@ -32,3 +32,33 @@ This CNN-based flower classification model processes the Flowers Recognition dat
 ![image](https://github.com/user-attachments/assets/524bf426-4d2b-474c-b0bf-61abdc9b117c)
 
 ## Overview:
+The system is a deep learning-based image classification model that identifies different types of flowers using a convolutional neural network (CNN). Here’s an overview of the process:
+
+### **1. Importing Required Libraries**  
+Essential Python libraries such as TensorFlow, OpenCV, NumPy, Pandas, and Matplotlib are imported for image processing, model building, and visualization.
+
+### **2. Dataset Preparation**  
+- The **Flowers Recognition** dataset from Kaggle is downloaded and extracted.  
+- Data is preprocessed using **ImageDataGenerator** for augmentation and normalization.  
+- Training and validation datasets are split with an 80-20 ratio.
+
+### **3. Model Architecture**  
+- A **CNN** is built with multiple convolutional and max-pooling layers.  
+- The final layers include a **Flatten**, **Dense (512 neurons with ReLU activation)**, and an **output layer (softmax for 5 classes: daisy, dandelion, rose, sunflower, tulip)**.
+
+### **4. Model Compilation & Training**  
+- The model is compiled using the **Adam optimizer** with **categorical cross-entropy loss**.  
+- Training is performed for **30 epochs**, showing gradual improvements in accuracy.  
+- Accuracy increases significantly but validation accuracy fluctuates.
+
+### **5. Model Evaluation**  
+- The trained model is tested on the validation dataset.  
+- The **accuracy is calculated**, and a **classification report & confusion matrix** are generated.  
+- Training accuracy is high, but validation accuracy is lower, indicating possible **overfitting**.
+
+### **6. Visualizing Performance**  
+Plots for **accuracy & loss over epochs** help analyze training behavior.
+
+### **7. Making Predictions**  
+- A function is created to load an image, preprocess it, and predict the flower class.  
+- Predictions are displayed with **confidence scores** and the corresponding image.
